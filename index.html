@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>E assim disse CELSIN.</title>
+    <link href="index.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="wrapper-main">
+    <div class="lo-content">
+        <cite class="la-frase">&nbsp;</cite>
+    </div>
+    <img class="lo-chico" alt='lo-chico' src="filosofo.png" />
+</div>
+<script type='text/javascript'>
+    var frases = [
+        {
+            "frase": "Se esse cara ai é musico, eu sou um astronauta",
+            "autor": "Celsin no mundo da lua"
+        },
+        {
+            "frase": "Quem dorme não vê as coisas",
+            "autor": "Celsin belo adormecido"
+        },
+        {
+            "frase": "Onde Urubu vai de ré, essa lingua ai vai de bico",
+            "autor": "Gigolo do backoffice"
+        },
+        {
+            "frase": "Vou tatuar uma árvore na barriga, pra voce mamar na sombra",
+            "autor": "Gigolo jardineiro"
+        },
+        {
+            "frase": "Cada enchadada uma minhoca",
+            "autor": "Celsin no campo"
+        },
+        {
+            "frase": "Eu não transo há mais de 8 meses",
+            "autor": "Gigolo tristão"
+        },
+        {
+            "frase": "Curte fio terra? EU SOU TRIFÁSICO!",
+            "autor": "Celsinho ligadão"
+        },
+        {
+            "frase": "Tô mais por fora que bunda de índio!",
+            "autor": "Mim ser Celsinho "
+        },
+        {
+            "frase": "Não precisa assoprar não que eu quero comer quente!",
+            "autor": "Gigolo apressado"
+        },
+        {
+            "frase": "Vinho eu gosto de tinto, mas cú eu gosto rosê!",
+            "autor": "Celsin domador"
+        },
+        {
+            "frase": "Proteção só divina!",
+            "autor": "Diácono Celsinho"
+        },
+        {
+            "frase": "Cada um chora por onde tem saudades",
+            "autor": "Gigolo poeta"
+        },
+        {
+            "frase": "O que ele tomou de dura agora, o naruto não fez de clone",
+            "autor": "Celso no jutsu"
+        },
+        {
+            "frase": "Aquele jeitinho de quem morreu e esqueceu de cair",
+            "autor": "Gigolo cansado"
+        },
+        {
+            "frase": "Só martelada do THOR!",
+            "autor": "Celso PortiROLA"
+        },
+        {
+            "frase": "Esse tem mais passado do que futuro",
+            "autor": "Celso motivador"
+        },
+        {
+            "frase": "Esse é igual sapo cego, nunca viu uma perereca",
+            "autor": "Celsinho Biologo"
+        },
+        {
+            "frase": "Hoje ele veio jogar bola de terno, parece que ta morto ",
+            "autor": "Celso o olheiro"
+        },
+        {
+            "frase": "Escorreu Tenaz nas cadeira dele",
+            "autor": "Celsin caderudo"
+        },
+        {
+            "frase": "Morrer queimado é menos doloroso ",
+            "autor": "Celsin da Planning"
+        },
+        {
+            "frase": "Pega tuas varas de pesca e toma teu rumo",
+            "autor": "Celso cavaleiro de Orion"
+        },
+        {
+            "frase": "Tem cara fazendo fotossintetize",
+            "autor": "Celsinho de plantão"
+        },
+        {
+            "frase": "Mais grosso que um dedão destroncado ",
+            "autor": "Celsinho podologo"
+        },        
+    ];
+
+    shuffle = function(a) {
+        var j, x, i;
+        for (i = a.length; i; i--) {
+            j = Math.floor(Math.random() * i);
+            x = a[i - 1];
+            a[i - 1] = a[j];
+            a[j] = x;
+        }
+    }
+
+    change = function() {
+        shuffle(frases);
+        var la_frase = document.getElementsByClassName('la-frase')[0];
+        la_frase.innerHTML = '&ldquo;&nbsp;' + frases[0].frase + '&nbsp;&rdquo;' + '<br/>' + '<p> <br />' + frases[0].autor + '</p>';
+    }
+
+    change();
+
+    setInterval(change, 5000);
+</script>
+</body>
+</html>
